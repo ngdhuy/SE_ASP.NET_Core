@@ -1,0 +1,44 @@
+﻿@{ ViewBag.Title = "Demo 02 - Table"; }
+
+<table border="1">
+    <caption>Table Title - Caption</caption>
+    <col style="background-color:#33cc66;"></col>
+    <colgroup style="background-color:#6633cc" span="2"></colgroup>
+    <thead>
+        <tr>
+        <th>Title column 01</th>
+        <th>Title column 02</th>
+        <th>Title column 03</th>
+        <th>Title column 04</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Cell 01</td>
+            <td>Cell 02</td>
+            <td>Cell 03</td>
+            <td>Cell 04</td>
+        </tr>
+        <tr>
+            <td colspan="2">Cell 01</td>
+            <td>Cell 03</td>
+            <td>Cell 04</td>
+        </tr>
+        <tr>
+            <td>Cell 01</td>
+            <td colspan="2" rowspan="2" background="~/Content/img/university-campus.ico">Cell 02</td>
+            <td rowspan="2">Cell 04</td>
+        </tr>
+        <tr>
+            <td bgcolor="#cc3366">Cell 01</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr bgcolor="red">
+            <td>Footer 01</td>
+            <td>Footer 02</td>
+            <td>Footer 03</td>
+            <td>Footer 04</td>
+        </tr>
+    </tfoot>
+</table>

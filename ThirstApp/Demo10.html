@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector - Contextual</title>
+    <style type="text/css">
+        div p {
+            color: #cc3366;
+        }
+
+        div > p {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        div * {
+            background-color: #03A9F4;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Heading of Document</h1>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad ullam eaque, nemo optio quos obcaecati sit! Facere commodi corrupti minima quas, ea, quos quaerat aspernatur, qui a incidunt velit hic. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus eaque eos sapiente praesentium fuga repellendus omnis. Praesentium, eum debitis, repudiandae voluptatem vel rerum qui quibusdam obcaecati iure vitae, eius exercitationem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ea nobis, maxime omnis voluptatum quidem expedita consequuntur temporibus neque veniam nulla illum officia quo. Iusto quaerat quas laborum perspiciatis autem?</p>
+    
+    <div>This is Block First</div>
+    
+    <div>This is Block Second</div>
+    <div>
+        <h2>Heading abc</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, error quaerat laudantium, odio impedit minima, aliquam cupiditate voluptates ab neque vel doloremque illum quos optio earum repellendus rem ex laboriosam!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic amet doloremque ratione pariatur, consectetur aliquam optio. Eligendi quis alias, est, minus, qui at ipsa aliquam possimus accusantium iusto error autem.</p>
+        <ul>
+            <li>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi maiores, in hic suscipit eos provident iste velit sequi quae qui expedita, nostrum quod ducimus perspiciatis totam reiciendis labore nisi et!</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nostrum eos perspiciatis recusandae quibusdam expedita voluptatibus repellendus. Unde dolor, ex illo eum molestiae voluptates, laborum alias, harum officiis temporibus quis?</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quod hic totam minus ratione temporibus doloremque saepe fuga recusandae quisquam nam repellendus nihil ut fugit voluptate aspernatur et maiores exercitationem.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

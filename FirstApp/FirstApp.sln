@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstApp", "FirstApp\FirstApp.csproj", "{ADB7D1F6-6892-4041-A1E9-73B0EDB8668E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADB7D1F6-6892-4041-A1E9-73B0EDB8668E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB7D1F6-6892-4041-A1E9-73B0EDB8668E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB7D1F6-6892-4041-A1E9-73B0EDB8668E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB7D1F6-6892-4041-A1E9-73B0EDB8668E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

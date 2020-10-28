@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{544D013C-3FFB-4F64-A3A2-069B8A181379}|">
+  <MonoDevelop.Ide.ItemProperties.SecondApp PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SecondApp/Views/Home/Demo06.cshtml">
+    <Files>
+      <File FileName="SecondApp/Controllers/HomeController.cs" Line="46" Column="32" />
+      <File FileName="SecondApp/Views/Home/Demo06.cshtml" Line="27" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SecondApp" expanded="True">
+            <Node name="SecondApp" expanded="True">
+              <Node name="App_Start" expanded="True" />
+              <Node name="Content" expanded="True">
+                <Node name="img" expanded="True" />
+                <Node name="media" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Demo06.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="SecondApp" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

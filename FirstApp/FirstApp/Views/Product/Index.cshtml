@@ -1,0 +1,17 @@
+﻿@model IEnumerable<FirstApp.Models.Product>
+
+<h1>List of Product</h1>
+
+@Html.ActionLink("Ceate new product", "create", "product")
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.ID - @item.Name |
+            @Html.ActionLink("Detail", "detail", "product", new { id = item.ID }) |
+            @Html.ActionLink("Edit", "Edit", "product", new { id = item.ID }) |
+            @Html.ActionLink("Delete", "delete", "product", new { id = item.ID })
+        </li>
+    }
+</ul>

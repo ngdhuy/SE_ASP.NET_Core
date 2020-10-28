@@ -1,0 +1,10 @@
+﻿@model FirstApp.Models.Product
+
+<h1>Product Detail information</h1>
+<ul>
+    <li>Product ID: @Model.ID</li>
+    <li>Product Name: @Model.Name</li>
+    <li>Price: @Model.Price$</li>
+</ul>
+
+@Html.ActionLink("Back to list", "index", "product")

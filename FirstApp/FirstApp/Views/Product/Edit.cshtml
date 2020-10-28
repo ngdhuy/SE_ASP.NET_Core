@@ -1,0 +1,32 @@
+﻿@model FirstApp.Models.Product
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-danger text-white">
+                <h5 class="text-uppercase text-center">Create New Product</h5>
+            </div>
+            <div class="card-body">
+                @using (Html.BeginForm(FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        <label asp-for="ID"></label>
+                        <input asp-for="ID" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Price"></label>
+                        <input asp-for="Price" class="form-control" />
+                    </div>
+                    <div class="form-control">
+                        <button type="submit">Create product</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,96 @@
+﻿@{ ViewBag.Title = "Demo 06 - HTML FORM cont."; }
+
+<h1>HTML FORM</h1>
+
+<fieldset>
+    <legend>Sign-up information</legend>
+    <form name="frmSignUp" action="/Home/Demo01" method="get">
+        <div>
+            <label for="us">Username:</label>
+            <input type="text" name="us" id="us" maxlength="10" required />
+        </div>
+        <div>
+            <label for="pw">Password: </label>
+            <input type="password" name="pw" id="pw" required />
+        </div>
+        <div>
+            <span>Role: </span>
+            <input type="radio" name="role" id="ad" value="admin" /><label for="ad">Admin</label>
+            <input type="radio" name="role" id="use" value="user" checked /><label for="use">User</label>
+        </div>
+        <div>
+            <span>Staff: </span>
+            <input type="checkbox" name="staff" value="bus" /><span>Business</span>
+            <input type="checkbox" name="staff" value="hr" /><span>Human Resource</span>
+            <input type="checkbox" name="staff" value="it" checked /><span>IT</span>
+        </div>
+        <div>
+            <span>Personal telephone number: </span>
+            <input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+        </div>
+        <div>
+            <span>Post code: </span>
+            <input type="number" name="post_code" />
+        </div>
+        <div>
+            <span>Research field: </span>
+            <select name="research">
+                <optgroup label="Business">
+                    <option value="mar">Marketing</option>
+                    <option value="hr">Human resource</option>
+                </optgroup>
+                <optgroup label="IT">
+                    <option value="se">Software Engineering</option>
+                    <option value="is">Information System</option>
+                    <option value="cv">Computer Vision</option>
+                </optgroup>
+                <option value="es" selected>Estimate</option>
+                <option value="mat">Math</option>
+            </select>
+        </div>
+        <div>
+            <span>Skill: </span>
+            <select name="skill" multiple>
+                <optgroup label="personal">
+                    <option value="sw">Swimming</option>
+                    <option value="si">Sing</option>
+                    <option value="run">Run</option>
+                </optgroup>
+                <option value="ser">Take servey</option>
+                <option value="pre">Present</option>
+            </select>
+        </div>
+        <div>
+            <span>Notes: </span>
+            <textarea name="note" cols="20" rows="5" wrap="soft" placeholder="input notes" ></textarea>
+            <textarea name="mynote" wrap="off"></textarea>
+        </div>
+        <div>
+            <button type="submit">
+                <img src="/Content/img/university-campus.ico" width="10" />
+                Sign-up
+            </button>
+        </div>
+    </form>
+</fieldset>
+<hr />
+<fieldset>
+    <legend>Upload Avartar</legend>
+    <form name="frmUploadFile" action="/Home/Demo02" method="post" enctype="multipart/form-data">
+        <label for="imgFile">Avartar file: </label>
+        <input type="file" name="imgFile" id="imgFile" required />
+        <button type="submit">Upload avartar file</button>
+    </form>
+</fieldset>
+<hr />
+<div style="width:600px; height:400px;">
+    <marquee behavior="alternate">
+        <img src="/Content/img/university-campus.ico" height="30" />
+    </marquee>
+    <marquee direction="up" behavior="scroll">
+        <img src="/Content/img/university-campus.ico" height="30" />
+    </marquee>
+    <marquee direction="right" behavior="slide">
+        <img src="/Content/img/university-campus.ico" height="30" />
+    </marquee>
+</div>
