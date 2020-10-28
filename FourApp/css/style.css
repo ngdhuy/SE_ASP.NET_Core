@@ -27,7 +27,7 @@ body {
 
 #content {
     background-color: #fff;
-    width: 58.772%;
+    width: 58.67%;
     min-height: 400px;
     float: left;
     margin: 0.5%;
@@ -41,4 +41,46 @@ body {
     height: 50px;
     text-align: center;
     line-height: 50px;
+}
+
+.menu, .sub-menu {
+   list-style: none;
+   padding: 0;
+   margin: 0; 
+}
+
+.menu > li {
+    height: 25px;
+    line-height: 25px;
+    background-color: #00796b;
+    color: #fff;
+    margin-bottom: 1px;
+    padding-left: 10px;
+}
+
+.menu > li:hover {
+    background-color: #512da8;
+}
+
+.menu > li:hover .sub-menu {
+    visibility: visible;
+}
+
+.sub-menu{
+    background-color: #e91e63;
+    position: absolute;
+    margin-left: 112px;
+    margin-top: -25px;
+    width: 150px;
+    visibility: hidden;
+}
+
+.sub-menu > li {
+    padding-left: 10px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.sub-menu > li:hover {
+    background-color: #1976d2;
 }

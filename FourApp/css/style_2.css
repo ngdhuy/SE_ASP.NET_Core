@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    height: 100px;
+    background-color: #b2d6ff;
+}
+
+.container {
+    overflow: hidden;
+    background-color: #cefaf0;
+}
+
+.page {
+    /* border: 2px solid #0b665b; */
+    width: 80%;
+    margin: auto;
+}
+
+.sidebar {
+    height: 300px;
+    width: 30%;
+    background-color: #f09a9d;
+    float: left;
+}
+
+.content {
+    height: 400px;
+    width: 70%;
+    background-color: #f5cf8e;
+    float: right;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #d6e9fe;
+    overflow: hidden;
+}
+
+.column {
+    float: left;
+    width: 31%;
+    height: 160px;
+    margin: 20px 1.15%;
+    background-color: #b2d6ff;
+    overflow: hidden;
+}
+
+.article-image {
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #d6e9fe;
+    margin: 10px;
+    float: left;
+}
+
+.username {
+    margin-top: 30px;
+}
+
+.comment {
+    margin: 10px;
+    overflow: hidden;
+}
+
+
+.adv {
+    height: 230px;
+    width: 100%;
+    clear: both;
+    background-color: #e0b098;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-item {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 1px;
+}
