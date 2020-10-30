@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Demo 05</title>
+    <style type="text/css">
+        div {
+            width: 300px;
+            height: 200px;
+            background-color: #cc3366;
+            text-align: center;
+            line-height: 200px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div onclick="SetBackgroundColor('#66cc33')" 
+        onmouseover="SetBackgroundColor('#9c27b0')"
+        onmouseout="SetBackgroundColor('#8877cc')">
+        Demo Text
+    </div>
+    <br />
+    <input type="Text" placeholder="input text here" 
+            onfocus="SetBackgroundColor('#FFA000')"
+            onblur="SetBackgroundColor('#212121')"
+    />
+    <button type="button" onclick="window.open('http://www.gooogle.com');">Open Google</button>
+    <script type="text/javascript">
+        function SetBackgroundColor(colorValue) {
+            document.bgColor = colorValue;
+        }
+    </script>
+</body>
+</html>
