@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Demo 05</title>
+</head>
+<body>
+    <div id="pos">
+        Hello world!!
+    </div>
+
+    <input type="text" id="txt" value="Test data" />
+
+    <div>
+        <input type="radio" name="rad" value="boy" checked /> BOY
+        <input type="radio" name="rad" value="girl" checked /> GIRL
+    </div>
+
+    <div class="blue">
+        <div>
+            <p>This is my TEXT</p>
+            <p>This is second TEXT</p>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        var node = document.getElementById("pos");
+        console.log(node);
+        console.log(node.nodeName);
+
+        console.log(document.getElementById("txt").value);
+
+        var radNodes = document.getElementsByName("rad");
+        console.log(radNodes);
+
+        var divNode = document.querySelector(".blue div");
+        console.log(divNode);
+        console.log(divNode.innerHTML);
+        console.log(divNode.innerText);
+        console.log(divNode.outerHTML);
+        console.log(divNode.outerText);
+
+        divNode.outerHTML = "<h1>HELLO</h1>";
+        
+    </script>
+</body>
+</html>

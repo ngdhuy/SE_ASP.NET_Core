@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Demo 05</title>
+</head>
+<body>
+    <h1>List of items</h1>
+    <button type="button" id="btnAddNew">Add new</button>
+    <button type="button" id="btnDeleteItem">Delete last item</button>
+    <button type="button" id="btnDeleteAll">Delete ALL</button>
+
+    <div id="pos"></div>
+
+    <script type="text/javascript">
+        var i = 1;
+
+        document.getElementById('btnAddNew').addEventListener('click', function(){
+            var posNode = document.getElementById('pos');
+            
+            var pNode = document.createElement('p');
+            posNode.appendChild(pNode);
+
+            var textNode = document.createTextNode((i++) + ". Item");
+            pNode.appendChild(textNode);
+        });
+
+        function deleteItem() {
+            var posNode = document.getElementById('pos');
+            if(posNode.childNodes.length > 0) {
+                posNode.removeChild(posNode.lastChild);
+                i--;
+            }
+        }
+
+        document.getElementById('btnDeleteItem').addEventListener('click', deleteItem);
+
+        var fDeleteAll = function deleteAll() {
+            var posNode = document.getElementById('pos');
+            posNode.innerHTML = "";
+            i = 1;
+        }
+
+        document.getElementById('btnDeleteAll').addEventListener('click', fDeleteAll);
+    </script>
+</body>
+</html>
